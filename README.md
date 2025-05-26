@@ -6,7 +6,8 @@ we did use in our case :
 - GRADLE
 - JSON
 - JAVA 21
-------------------------------------------------------------REMARKS--------------------------------------------------------------------------------------------
+- 
+------------------------------------------------------REMARKS--------------------------------------------------------------------------------------------
   This project we did not use the NotificationService interface because , its action was already implemented in the observer pattern via :
 - EvenementObservable
 - ParticipantObserver
