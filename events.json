@@ -1,0 +1,61 @@
+[ {
+  "id" : "C001",
+  "nom" : "AI Future Summit",
+  "date" : "2025-07-10T09:00:00",
+  "lieu" : "Online",
+  "capaciteMax" : 5,
+  "participants" : [ {
+    "id" : "P001",
+    "nom" : "Raoul",
+    "email" : "raoul@example.com"
+  }, {
+    "id" : "P002",
+    "nom" : "Pierre",
+    "email" : "pierre@example.com"
+  }, {
+    "id" : "P003",
+    "nom" : "Rene",
+    "email" : "rene@example.com"
+  }, {
+    "id" : "P004",
+    "nom" : "Ossombe",
+    "email" : "ossombe@example.com"
+  }, {
+    "id" : "P005",
+    "nom" : "Tony",
+    "email" : "tony@example.com"
+  } ],
+  "observers" : [ {
+    "id" : "P001",
+    "nom" : "Raoul",
+    "email" : "raoul@example.com"
+  }, {
+    "id" : "P002",
+    "nom" : "Pierre",
+    "email" : "pierre@example.com"
+  } ],
+  "theme" : "Future of AI",
+  "intervenants" : [ {
+    "id" : "S001",
+    "nom" : "Dr. Chana",
+    "specialite" : "AI Danger"
+  }, {
+    "id" : "S002",
+    "nom" : "Mr. Onana",
+    "specialite" : "Quantum Computing"
+  } ]
+}, {
+  "id" : "P001",
+  "nom" : "Summer Beats",
+  "date" : "2025-08-15T20:00:00",
+  "lieu" : "OLembe Stadium",
+  "capaciteMax" : 5000,
+  "participants" : [ ],
+  "observers" : [ {
+    "id" : "P003",
+    "nom" : "Rene",
+    "email" : "rene@example.com"
+  } ],
+  "artiste" : "Beyonce ",
+  "genreMusical" : "POP"
+} ]

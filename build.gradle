@@ -1,0 +1,46 @@
+plugins {
+    id 'java' // Applies the Java plugin
+    id 'application' // Makes it easy to run your application directly from Gradle
+}
+
+group = 'com.GestionEvenement.event' // Your chosen GroupId from Step 1
+version = '1.0-SNAPSHOT' // Your project version
+
+repositories {
+    mavenCentral() // Where Gradle finds your dependencies (Jackson, JUnit)
+}
+
+dependencies {
+    // ---- Dependencies for JSON Serialization (Jackson) ----
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0' // Core Jackson library for data binding
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.0' // For Java 8 Date/Time API (LocalDateTime) support
+
+    // ---- Dependencies for Unit Testing (JUnit 5) ----
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.0' // API for writing JUnit tests
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.0' // Engine for running JUnit tests
+
+    // You can check for the latest versions here:
+    // Jackson Databind: https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    // Jackson Datatype JSR310: https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310
+    // JUnit Jupiter API: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+}
+
+// Configuration for JUnit 5 to ensure tests run correctly
+test {
+    useJUnitPlatform()
+}
+
+// Configuration to run your main application (e.g., from Gradle tasks)
+application {
+    mainClass = 'com.GestionEvenement.event.app.MainApp' // Define the full path to your main class
+}
+
+// Optional: To package your application into a runnable JAR
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.GestionEvenement.event.app.MainApp' // Define the full path to your main class
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
