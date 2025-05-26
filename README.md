@@ -6,8 +6,8 @@ we did use in our case :
 - GRADLE
 - JSON
 - JAVA 21
-------------------------------------------------------------REMARKS---------------------------------------------------------------------------------------------------
-In this project we did not use the NotificationService interface because , its action was already implemented in the observer pattern via :
+------------------------------------------------------------REMARKS--------------------------------------------------------------------------------------------
+  This project we did not use the NotificationService interface because , its action was already implemented in the observer pattern via :
 - EvenementObservable
 - ParticipantObserver
 we have to understand that : When an event is canceled  it directly calls the update() method on its registered ParticipantObserver instances.The Participant.update() method then directly triggers its own receiveNotification() method, which handles the asynchronous notification.
