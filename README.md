@@ -1,4 +1,4 @@
-# TpGestionEvenementPoo2
+# TpGestionEvenementPoo2OssombePierreReneRaoul
 This project intend to apply multiple OOP concepts such as : design pattern,custom exception handling,JSON/XML serialisation,lamdas/streams ,asynchronous program and using JUNIT in order to test .
 we did use in our case :
 - JSON serialisation ,lambdas ,asynchronous programming ,customed exception handling ,design patterns and JUNIT .
